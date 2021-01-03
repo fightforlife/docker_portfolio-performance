@@ -1,5 +1,5 @@
 # Dockerfile
-## Taken and edited from: https://forum.portfolio-performance.info/t/portfolio-performance-in-docker/10062 
+#Taken and edited from: https://forum.portfolio-performance.info/t/portfolio-performance-in-docker/10062 
 # Pull base image.
 FROM jlesage/baseimage-gui:alpine-3.12-glibc
 
