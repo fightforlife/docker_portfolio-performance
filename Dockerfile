@@ -5,6 +5,8 @@ FROM jlesage/baseimage-gui:alpine-3.12-glibc
 
 #AppIcon Link
 ENV APP_ICON_URL=https://www.portfolio-performance.info/images/logo.png
+# Set the name of the application.
+ENV APP_NAME="Portfolio Performance"
 
 #Install dependencies for getting portfolio
 RUN apk --no-cache add ca-certificates wget curl && update-ca-certificates
@@ -34,5 +36,4 @@ RUN \
 # Copy the start script.
 COPY startapp.sh /startapp.sh
 
-# Set the name of the application.
-ENV APP_NAME="Portfolio Performance"
+
