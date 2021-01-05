@@ -29,8 +29,6 @@ RUN \
 
 RUN \
 	sed -i '1s;^;-configuration\n/config/portfolio/configuration\n-data\n/config/portfolio/workspace\n;' /opt/portfolio/PortfolioPerformance.ini && \
-	echo "osgi.nl=de" >> /opt/portfolio/configuration/config.ini && \
-	chmod -R 777 /opt/portfolio && \
 	install_app_icon.sh "$APP_ICON_URL"
 
 # Copy the start script.
