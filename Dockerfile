@@ -24,7 +24,7 @@ RUN cd /opt && \
 #Install dependencies for getting portfolio
 RUN \
 	add-pkg \
-	openjdk8-jre \
+	openjdk11-jre \
 	gtk+3.0
 
 RUN \
